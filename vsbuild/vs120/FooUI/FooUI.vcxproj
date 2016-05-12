@@ -1,0 +1,324 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <ProjectGuid>{EBB78BB7-A781-40AF-8953-85810CDB9FCE}</ProjectGuid>
+    <RootNamespace>FooUI</RootNamespace>
+    <Keyword>Win32Proj</Keyword>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>StaticLibrary</ConfigurationType>
+    <PlatformToolset>v120_xp</PlatformToolset>
+    <CharacterSet>Unicode</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="PropertySheets">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup>
+    <_ProjectFileVersion>11.0.51106.1</_ProjectFileVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+    <TargetName>$(ProjectName)</TargetName>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <LinkIncremental>true</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <LinkIncremental>false</LinkIncremental>
+    <OutDir>$(SolutionDir)..\..\lib\$(Platform)\$(Configuration)\</OutDir>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FOOUI_EXPORTS;FOOUI_BUILD_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebug</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>EditAndContinue</DebugInformationFormat>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>Disabled</Optimization>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;_DEBUG;_WINDOWS;_USRDLL;FOOUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <MinimalRebuild>true</MinimalRebuild>
+      <BasicRuntimeChecks>EnableFastChecks</BasicRuntimeChecks>
+      <RuntimeLibrary>MultiThreadedDebugDLL</RuntimeLibrary>
+      <PrecompiledHeader>Use</PrecompiledHeader>
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FOOUI_EXPORTS;FOOUI_BUILD_LIB;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreaded</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+      <BrowseInformation>true</BrowseInformation>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX86</TargetMachine>
+    </Link>
+    <Bscmake>
+      <PreserveSbr>true</PreserveSbr>
+    </Bscmake>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Midl>
+      <TargetEnvironment>X64</TargetEnvironment>
+    </Midl>
+    <ClCompile>
+      <Optimization>MaxSpeed</Optimization>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <AdditionalIncludeDirectories>..\..\..\include;..\..\..\private;%(AdditionalIncludeDirectories)</AdditionalIncludeDirectories>
+      <PreprocessorDefinitions>WIN32;NDEBUG;_WINDOWS;_USRDLL;FOOUI_EXPORTS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <RuntimeLibrary>MultiThreadedDLL</RuntimeLibrary>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <PrecompiledHeader />
+      <WarningLevel>Level3</WarningLevel>
+      <DebugInformationFormat>ProgramDatabase</DebugInformationFormat>
+    </ClCompile>
+    <Link>
+      <GenerateDebugInformation>true</GenerateDebugInformation>
+      <SubSystem>Windows</SubSystem>
+      <OptimizeReferences>true</OptimizeReferences>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <TargetMachine>MachineX64</TargetMachine>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\private\markup\FResourceManagerPrivate_p.cpp" />
+    <ClCompile Include="..\..\..\private\markup\pugixml\FMarkupParser_Pugixml_p.cpp" />
+    <ClCompile Include="..\..\..\private\markup\ResourcePackage\zip_utils\XUnzip.cpp" />
+    <ClCompile Include="..\..\..\src\core\FApplication.cpp" />
+    <ClCompile Include="..\..\..\src\core\FDebug.cpp" />
+    <ClCompile Include="..\..\..\src\core\FLock.cpp" />
+    <ClCompile Include="..\..\..\src\core\FPtrHash.cpp" />
+    <ClCompile Include="..\..\..\src\core\FPtrList.cpp" />
+    <ClCompile Include="..\..\..\src\core\FString.cpp" />
+    <ClCompile Include="..\..\..\src\core\FTimer.cpp" />
+    <ClCompile Include="..\..\..\src\core\FTypes.cpp" />
+    <ClCompile Include="..\..\..\src\markup\FAttributeScript.cpp" />
+    <ClCompile Include="..\..\..\src\markup\FColorResource.cpp" />
+    <ClCompile Include="..\..\..\src\markup\FCursorResource.cpp" />
+    <ClCompile Include="..\..\..\src\markup\FFontResource.cpp" />
+    <ClCompile Include="..\..\..\src\markup\FImageResource.cpp" />
+    <ClCompile Include="..\..\..\src\markup\FMarkup.cpp" />
+    <ClCompile Include="..\..\..\src\markup\FResourceManager.cpp" />
+    <ClCompile Include="..\..\..\src\markup\FStringResource.cpp" />
+    <ClCompile Include="..\..\..\src\markup\FStyleSheetResource.cpp" />
+    <ClCompile Include="..\..\..\src\painting\FColor.cpp" />
+    <ClCompile Include="..\..\..\src\painting\FFont.cpp" />
+    <ClCompile Include="..\..\..\src\painting\FGraphics.cpp" />
+    <ClCompile Include="..\..\..\src\painting\FGraphics_HtmlText.cpp" />
+    <ClCompile Include="..\..\..\src\painting\FImage.cpp" />
+    <ClCompile Include="..\..\..\src\styles\FColorStyle.cpp" />
+    <ClCompile Include="..\..\..\src\styles\FFocusRectStyle.cpp" />
+    <ClCompile Include="..\..\..\src\styles\FImageStyle.cpp" />
+    <ClCompile Include="..\..\..\src\styles\FIncludeStyle.cpp" />
+    <ClCompile Include="..\..\..\src\styles\FStyle.cpp" />
+    <ClCompile Include="..\..\..\src\styles\FTextStyle.cpp" />
+    <ClCompile Include="..\..\..\src\styles\FWindowRegionStyle.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FAbstractList.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FAbstractSlider.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FActivex.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FButton.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FComboBox.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FEdit.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FHeader.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FHotKey.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FLabel.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FLayout.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FListCtrl.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FProgressBar.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FScrollBar.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FToolTip.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FTreeCtrl.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FWebBrowser.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FWidget.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\FWindow.cpp" />
+    <ClCompile Include="..\..\..\src\widgets\events\FEvent.cpp" />
+    <ClCompile Include="..\..\..\private\FModule_p.cpp" />
+    <ClCompile Include="..\..\..\private\StdAfx.cpp">
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">Create</PrecompiledHeader>
+      <PrecompiledHeader Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">Create</PrecompiledHeader>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\widgets\FWidgetPrivate_p.cpp" />
+    <ClCompile Include="..\..\..\private\widgets\FWindowPrivate_p.cpp" />
+    <ClCompile Include="..\..\..\private\markup\FResourcePool_p.cpp" />
+    <ClCompile Include="..\..\..\private\markup\ResourcePackage\zip_utils\FZipPackage_p.cpp" />
+    <ClCompile Include="..\..\..\private\painting\gdi\FFont_gdi_p.cpp" />
+    <ClCompile Include="..\..\..\private\painting\gdi\FGraphics_gdi_p.cpp" />
+    <ClCompile Include="..\..\..\private\painting\gdi\FImage_gdi_p.cpp" />
+    <ClCompile Include="..\..\..\private\painting\skia\FFont_Skia_p.cpp" />
+    <ClCompile Include="..\..\..\private\painting\skia\FGraphics_skia_p.cpp" />
+    <ClCompile Include="..\..\..\private\painting\skia\FImage_Skia_p.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\FooUI.h" />
+    <ClInclude Include="..\..\..\include\config\FConfig.h" />
+    <ClInclude Include="..\..\..\include\core\FApplication.h" />
+    <ClInclude Include="..\..\..\include\core\FBase.h" />
+    <ClInclude Include="..\..\..\include\core\FDebug.h" />
+    <ClInclude Include="..\..\..\include\core\FGloabl.h" />
+    <ClInclude Include="..\..\..\include\core\FLock.h" />
+    <ClInclude Include="..\..\..\include\core\FObject.h" />
+    <ClInclude Include="..\..\..\include\core\FPtrHash.h" />
+    <ClInclude Include="..\..\..\include\core\FPtrList.h" />
+    <ClInclude Include="..\..\..\include\core\FString.h" />
+    <ClInclude Include="..\..\..\include\core\FTimer.h" />
+    <ClInclude Include="..\..\..\include\core\FTypes.h" />
+    <ClInclude Include="..\..\..\include\markup\FAttributeScript.h" />
+    <ClInclude Include="..\..\..\include\markup\FColorResource.h" />
+    <ClInclude Include="..\..\..\include\markup\FCursorResource.h" />
+    <ClInclude Include="..\..\..\include\markup\FFontResource.h" />
+    <ClInclude Include="..\..\..\include\markup\FImageResource.h" />
+    <ClInclude Include="..\..\..\include\markup\FMarkup.h" />
+    <ClInclude Include="..\..\..\include\markup\FMarkupDef.h" />
+    <ClInclude Include="..\..\..\include\markup\FResourceDef.h" />
+    <ClInclude Include="..\..\..\include\markup\FResourceManager.h" />
+    <ClInclude Include="..\..\..\include\markup\FStringResource.h" />
+    <ClInclude Include="..\..\..\include\markup\FStyleSheetResource.h" />
+    <ClInclude Include="..\..\..\include\painting\FColor.h" />
+    <ClInclude Include="..\..\..\include\painting\FFont.h" />
+    <ClInclude Include="..\..\..\include\painting\FGraphics.h" />
+    <ClInclude Include="..\..\..\include\painting\FImage.h" />
+    <ClInclude Include="..\..\..\include\styles\FColorStyle.h" />
+    <ClInclude Include="..\..\..\include\styles\FFocusRectStyle.h" />
+    <ClInclude Include="..\..\..\include\styles\FImageStyle.h" />
+    <ClInclude Include="..\..\..\include\styles\FIncludeStyle.h" />
+    <ClInclude Include="..\..\..\include\styles\FStyle.h" />
+    <ClInclude Include="..\..\..\include\styles\FStyleDef.h" />
+    <ClInclude Include="..\..\..\include\styles\FStyleSheet.h" />
+    <ClInclude Include="..\..\..\include\styles\FTextStyle.h" />
+    <ClInclude Include="..\..\..\include\styles\FWindowRegionStyle.h" />
+    <ClInclude Include="..\..\..\include\widgets\FAbstractList.h" />
+    <ClInclude Include="..\..\..\include\widgets\FAbstractSlider.h" />
+    <ClInclude Include="..\..\..\include\widgets\FActivex.h" />
+    <ClInclude Include="..\..\..\include\widgets\FButton.h" />
+    <ClInclude Include="..\..\..\include\widgets\FComboBox.h" />
+    <ClInclude Include="..\..\..\include\widgets\FEdit.h" />
+    <ClInclude Include="..\..\..\include\widgets\FHeader.h" />
+    <ClInclude Include="..\..\..\include\widgets\FHotKey.h" />
+    <ClInclude Include="..\..\..\include\widgets\FLabel.h" />
+    <ClInclude Include="..\..\..\include\widgets\FLayout.h" />
+    <ClInclude Include="..\..\..\include\widgets\FListCtrl.h" />
+    <ClInclude Include="..\..\..\include\widgets\FProgressBar.h" />
+    <ClInclude Include="..\..\..\include\widgets\FScrollBar.h" />
+    <ClInclude Include="..\..\..\include\widgets\FToolTip.h" />
+    <ClInclude Include="..\..\..\include\widgets\FTreeCtrl.h" />
+    <ClInclude Include="..\..\..\include\widgets\FWebBrowser.h" />
+    <ClInclude Include="..\..\..\include\widgets\FWidget.h" />
+    <ClInclude Include="..\..\..\include\widgets\FWidgetDef.h" />
+    <ClInclude Include="..\..\..\include\widgets\FWindow.h" />
+    <ClInclude Include="..\..\..\include\widgets\animators\FAnimation.h" />
+    <ClInclude Include="..\..\..\include\widgets\events\FEvent.h" />
+    <ClInclude Include="..\..\..\private\F3rd_p.h" />
+    <ClInclude Include="..\..\..\private\FModule_p.h" />
+    <ClInclude Include="..\..\..\private\markup\FResourceManagerPrivate_p.h" />
+    <ClInclude Include="..\..\..\private\markup\pugixml\FMarkupParser_Pugixml_p.h" />
+    <ClInclude Include="..\..\..\private\StdAfx.h" />
+    <ClInclude Include="..\..\..\private\widgets\FWidgetPrivate_p.h" />
+    <ClInclude Include="..\..\..\private\widgets\FWindowPrivate_p.h" />
+    <ClInclude Include="..\..\..\private\markup\FResourcePool_p.h" />
+    <ClInclude Include="..\..\..\private\markup\pugixml\F3rd_Pugixml_p.h" />
+    <ClInclude Include="..\..\..\private\markup\ResourcePackage\zip_utils\FZipPackage_p.h" />
+    <ClInclude Include="..\..\..\private\painting\gdi\F3rd_gdi_p.h" />
+    <ClInclude Include="..\..\..\private\painting\gdi\FFont_gdi_p.h" />
+    <ClInclude Include="..\..\..\private\painting\gdi\FGraphics_gdi_p.h" />
+    <ClInclude Include="..\..\..\private\painting\gdi\FImage_gdi_p.h" />
+    <ClInclude Include="..\..\..\private\painting\skia\F3rd_Skia_p.h" />
+    <ClInclude Include="..\..\..\private\painting\skia\FFont_Skia_p.h" />
+    <ClInclude Include="..\..\..\private\painting\skia\FGraphics_skia_p.h" />
+    <ClInclude Include="..\..\..\private\painting\skia\FImage_Skia_p.h" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>

@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="源文件">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="源文件\config">
+      <UniqueIdentifier>{ecff5ba9-254b-47d5-ac42-f4a513116441}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\core">
+      <UniqueIdentifier>{0deb91a2-257a-4127-9a61-db90ff84fa8b}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\markup">
+      <UniqueIdentifier>{15d9cb75-1552-4e27-8d1d-b3bfb56ecf10}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\painting">
+      <UniqueIdentifier>{ce26f645-687f-4012-9c70-8dab3e6489db}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\styles">
+      <UniqueIdentifier>{9a7d1bf3-bd84-40cc-a883-8eb1cc9ed44f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\widgets">
+      <UniqueIdentifier>{92f58ccb-f030-4aa7-a306-39983609e9c2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\widgets\animators">
+      <UniqueIdentifier>{05b9a9ce-0b95-48b6-a87b-d1199c50cb97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="源文件\widgets\events">
+      <UniqueIdentifier>{fcbb869b-9f5c-494b-989c-1f67ecdc251f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hpp;hxx;hm;inl;inc;xsd</Extensions>
+    </Filter>
+    <Filter Include="头文件\config">
+      <UniqueIdentifier>{8e56f48a-f0df-43b6-814d-525946d3362f}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\core">
+      <UniqueIdentifier>{6bd8b0bf-a640-4e6c-b440-0e1ba0595f45}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\markup">
+      <UniqueIdentifier>{b55c64b9-31d9-4d03-aa05-2c93f25d7cf4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\painting">
+      <UniqueIdentifier>{a3616c29-ab03-4419-bd3c-8d61919017a5}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\styles">
+      <UniqueIdentifier>{af814c43-d997-4169-9919-e939ed3a3437}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\widgets">
+      <UniqueIdentifier>{2318c342-9d9c-4bc1-be8a-1339a71f8a97}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\widgets\animators">
+      <UniqueIdentifier>{258d3468-8de7-4022-afaf-7f5c1a38947a}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="头文件\widgets\events">
+      <UniqueIdentifier>{1eaf5eb9-5c44-44ef-9cd4-962a12b8e1e2}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="资源文件">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav</Extensions>
+    </Filter>
+    <Filter Include="private">
+      <UniqueIdentifier>{16cf4b71-54e1-44f2-8a0a-5e716acc8f69}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\markup">
+      <UniqueIdentifier>{0418d0c0-60e2-49a0-a6e5-8ba6e66a5f52}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\markup\pugixml">
+      <UniqueIdentifier>{42aec159-bc31-453b-b9f1-1e531dcaf90e}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\markup\ResourcePackage">
+      <UniqueIdentifier>{dc02d720-327f-4828-81c1-7cf4d2ac0ac3}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\markup\ResourcePackage\zip_utils">
+      <UniqueIdentifier>{51915bb0-134c-4f06-8540-4ced9421a351}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\painting">
+      <UniqueIdentifier>{b2a128ac-c136-40b4-af34-9f17f3b96caf}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\painting\gdi">
+      <UniqueIdentifier>{c18e29ff-85be-4ee5-adfe-95ca5e8d1076}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\painting\skia">
+      <UniqueIdentifier>{0f02fc94-abca-4986-81d7-bfb53eac3e23}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="private\widgets">
+      <UniqueIdentifier>{6d9fc31a-a3e2-48c4-8640-5fc1404036a5}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="..\..\..\src\core\FApplication.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\core\FDebug.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\core\FLock.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\core\FPtrHash.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\core\FPtrList.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\core\FString.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\core\FTimer.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\core\FTypes.cpp">
+      <Filter>源文件\core</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\markup\FAttributeScript.cpp">
+      <Filter>源文件\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\markup\FColorResource.cpp">
+      <Filter>源文件\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\markup\FCursorResource.cpp">
+      <Filter>源文件\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\markup\FFontResource.cpp">
+      <Filter>源文件\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\markup\FImageResource.cpp">
+      <Filter>源文件\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\markup\FMarkup.cpp">
+      <Filter>源文件\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\markup\FResourceManager.cpp">
+      <Filter>源文件\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\markup\FStringResource.cpp">
+      <Filter>源文件\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\markup\FStyleSheetResource.cpp">
+      <Filter>源文件\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\painting\FColor.cpp">
+      <Filter>源文件\painting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\painting\FFont.cpp">
+      <Filter>源文件\painting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\painting\FGraphics.cpp">
+      <Filter>源文件\painting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\painting\FGraphics_HtmlText.cpp">
+      <Filter>源文件\painting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\painting\FImage.cpp">
+      <Filter>源文件\painting</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\styles\FColorStyle.cpp">
+      <Filter>源文件\styles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\styles\FFocusRectStyle.cpp">
+      <Filter>源文件\styles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\styles\FImageStyle.cpp">
+      <Filter>源文件\styles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\styles\FIncludeStyle.cpp">
+      <Filter>源文件\styles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\styles\FStyle.cpp">
+      <Filter>源文件\styles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\styles\FTextStyle.cpp">
+      <Filter>源文件\styles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\styles\FWindowRegionStyle.cpp">
+      <Filter>源文件\styles</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FAbstractList.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FAbstractSlider.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FButton.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FComboBox.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FEdit.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FHeader.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FHotKey.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FLabel.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FLayout.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FListCtrl.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FProgressBar.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FScrollBar.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FToolTip.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FWidget.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FWindow.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\events\FEvent.cpp">
+      <Filter>源文件\widgets\events</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\FModule_p.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\StdAfx.cpp">
+      <Filter>private</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\widgets\FWidgetPrivate_p.cpp">
+      <Filter>private\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\widgets\FWindowPrivate_p.cpp">
+      <Filter>private\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\markup\FResourcePool_p.cpp">
+      <Filter>private\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\markup\ResourcePackage\zip_utils\FZipPackage_p.cpp">
+      <Filter>private\markup\ResourcePackage\zip_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\painting\gdi\FFont_gdi_p.cpp">
+      <Filter>private\painting\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\painting\gdi\FGraphics_gdi_p.cpp">
+      <Filter>private\painting\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\painting\gdi\FImage_gdi_p.cpp">
+      <Filter>private\painting\gdi</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\painting\skia\FFont_Skia_p.cpp">
+      <Filter>private\painting\skia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\painting\skia\FGraphics_skia_p.cpp">
+      <Filter>private\painting\skia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\painting\skia\FImage_Skia_p.cpp">
+      <Filter>private\painting\skia</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\markup\FResourceManagerPrivate_p.cpp">
+      <Filter>private\markup</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\markup\pugixml\FMarkupParser_Pugixml_p.cpp">
+      <Filter>private\markup\pugixml</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FTreeCtrl.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FActivex.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\private\markup\ResourcePackage\zip_utils\XUnzip.cpp">
+      <Filter>private\markup\ResourcePackage\zip_utils</Filter>
+    </ClCompile>
+    <ClCompile Include="..\..\..\src\widgets\FWebBrowser.cpp">
+      <Filter>源文件\widgets</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="..\..\..\include\FooUI.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\config\FConfig.h">
+      <Filter>头文件\config</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FApplication.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FBase.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FDebug.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FGloabl.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FLock.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FObject.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FPtrHash.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FPtrList.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FString.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FTimer.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\core\FTypes.h">
+      <Filter>头文件\core</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FAttributeScript.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FColorResource.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FCursorResource.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FFontResource.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FImageResource.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FMarkup.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FMarkupDef.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FResourceDef.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FResourceManager.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FStringResource.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\markup\FStyleSheetResource.h">
+      <Filter>头文件\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\painting\FColor.h">
+      <Filter>头文件\painting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\painting\FFont.h">
+      <Filter>头文件\painting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\painting\FGraphics.h">
+      <Filter>头文件\painting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\painting\FImage.h">
+      <Filter>头文件\painting</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\styles\FColorStyle.h">
+      <Filter>头文件\styles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\styles\FFocusRectStyle.h">
+      <Filter>头文件\styles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\styles\FImageStyle.h">
+      <Filter>头文件\styles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\styles\FIncludeStyle.h">
+      <Filter>头文件\styles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\styles\FStyle.h">
+      <Filter>头文件\styles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\styles\FStyleDef.h">
+      <Filter>头文件\styles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\styles\FStyleSheet.h">
+      <Filter>头文件\styles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\styles\FTextStyle.h">
+      <Filter>头文件\styles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\styles\FWindowRegionStyle.h">
+      <Filter>头文件\styles</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FAbstractList.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FAbstractSlider.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FButton.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FComboBox.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FEdit.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FHeader.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FHotKey.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FLabel.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FLayout.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FListCtrl.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FProgressBar.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FScrollBar.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FToolTip.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FWidget.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FWidgetDef.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FWindow.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\animators\FAnimation.h">
+      <Filter>头文件\widgets\animators</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\events\FEvent.h">
+      <Filter>头文件\widgets\events</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\F3rd_p.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\FModule_p.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\StdAfx.h">
+      <Filter>private</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\widgets\FWidgetPrivate_p.h">
+      <Filter>private\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\widgets\FWindowPrivate_p.h">
+      <Filter>private\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\markup\FResourcePool_p.h">
+      <Filter>private\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\markup\pugixml\F3rd_Pugixml_p.h">
+      <Filter>private\markup\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\markup\ResourcePackage\zip_utils\FZipPackage_p.h">
+      <Filter>private\markup\ResourcePackage\zip_utils</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\painting\gdi\F3rd_gdi_p.h">
+      <Filter>private\painting\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\painting\gdi\FFont_gdi_p.h">
+      <Filter>private\painting\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\painting\gdi\FGraphics_gdi_p.h">
+      <Filter>private\painting\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\painting\gdi\FImage_gdi_p.h">
+      <Filter>private\painting\gdi</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\painting\skia\F3rd_Skia_p.h">
+      <Filter>private\painting\skia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\painting\skia\FFont_Skia_p.h">
+      <Filter>private\painting\skia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\painting\skia\FGraphics_skia_p.h">
+      <Filter>private\painting\skia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\painting\skia\FImage_Skia_p.h">
+      <Filter>private\painting\skia</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\markup\FResourceManagerPrivate_p.h">
+      <Filter>private\markup</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\private\markup\pugixml\FMarkupParser_Pugixml_p.h">
+      <Filter>private\markup\pugixml</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FTreeCtrl.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FActivex.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+    <ClInclude Include="..\..\..\include\widgets\FWebBrowser.h">
+      <Filter>头文件\widgets</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
